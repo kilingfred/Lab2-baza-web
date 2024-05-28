@@ -1,0 +1,22 @@
+.calendar {
+    display: grid;
+    height: 70vh;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.calendar-item {  
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar-item:nth-child(7n+0) {
+    background-color: blue;
+}
+.calendar-item:nth-child(7n+6) {
+    background-color: blue;
+}

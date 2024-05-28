@@ -1,0 +1,49 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: green;
+}
+.menu-item{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a::after {
+    content: "";
+        position:sticky;
+        width: 30%;
+        height: 3%;
+        margin-left: 40%;
+        display: flex;
+        align-items: center;
+        background-color: red;
+    
+}
+a:hover::after {
+    margin-left: 0%;
+    width: 100%;
+
+}
+.submenu1 {
+    display: none;
+}
+.submenu2 {
+    display: none;
+}
+.line {
+    display: flex;
+    background-color: red;
+    min-height: 4%;
+    min-width: 20%;
+    align-self: center;
+}
+
+.menu-arrow {
+    margin-left: 6px;
+}
+
